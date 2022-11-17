@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: red;
+  overflow: hidden;
+}
+.game-container {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.player {
+  background-image: url("player.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 179px;
+  width: 239px;
+  position: absolute;
+  bottom: 4rem;
+  left: -2.2rem;
+}
+.playerani {
+  animation: player 0.6s linear;
+}
+@keyframes player {
+  0% {
+    bottom: 4rem;
+  }
+  30% {
+    bottom: 15rem;
+  }
+  100% {
+    bottom: 4rem;
+  }
+}
+.obstacle {
+  background-image: url("obstacle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+  width: 95px;
+  position: absolute;
+  bottom: 4rem;
+  left: 75vw;
+}
+
+.animateobs {
+  animation: obs 7s linear infinite;
+}
+
+@keyframes obs {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: -10vw;
+  }
+}
+
+.gameover {
+  visibility: hidden;
+  position: relative;
+  top: 37.5%;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+#replay {
+  width: 87px;
+  height: 41px;
+  font-size: 27px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 5px;
+  border: none;
+  background-color: lightcyan;
+}
+
+.replay {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 35.5%;
+}
+
+#score {
+  padding-top: 7px;
+  padding-left: 7px;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#start {
+  visibility: visible;
+  position: relative;
+  top: 17.5%;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+.play {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 35.5%;
+}
+#play {
+  width: 87px;
+  height: 41px;
+  font-size: 27px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 5px;
+  border: none;
+  background-color: lightcyan;
+}
